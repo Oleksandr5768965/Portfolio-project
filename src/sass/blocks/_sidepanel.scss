@@ -1,3 +1,6 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
 .sidepanel {
     position: fixed;
     top: 230px;
