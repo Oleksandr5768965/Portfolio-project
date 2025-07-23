@@ -1,0 +1,70 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.skills {
+    padding-top: 120px;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 13px;
+        padding-top: 60px;
+        &-item {
+            padding:30px 30px 25px 30px;
+            width: 270px;
+            height: 270px;
+            border: solid 1px #000;
+            h2 {
+                margin:20px 0 15px 0;
+            }
+        }
+        &-text {
+            font-size: 12px;
+        }
+    }
+    .statusbars {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 45px;
+        row-gap: 30px;
+        padding-top: 120px;
+        &__item {
+            width: 350px;
+            height: 70px;
+            &-text {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                h2 {
+                    font-weight: 800;
+                    margin:0;
+                    padding-left: 14px;
+                    position: relative;
+                    @include before_circle;
+                        &::before {
+                            bottom:3px;
+                            left: 0;
+                    }
+                }
+                span {
+                    font-weight: 500;
+                }
+            }
+            &-progress {
+                width: 100%;
+                background-color: #E8E4DE;
+                border-radius: 6px;
+                max-width: 100%;
+                div {
+                    height:14px;
+                    background-color: #FFA501;
+                    border-radius: 6px;
+                    margin-top: 27px;
+                    max-width:100%;
+                }
+            }
+        }
+    }
+
+}
