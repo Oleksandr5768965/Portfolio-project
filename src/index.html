@@ -87,12 +87,12 @@
 
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#">ABOUT ME</a></li>
-                    <li class="menu__link"><a href="#">MY EXPERIENCE</a></li>
-                    <li class="menu__link"><a href="#">MY SKILLS</a></li>
-                    <li class="menu__link"><a href="#">MY PROJECTS</a></li>
-                    <li class="menu__link"><a href="#">PRICE-LIST</a></li>
-                    <li class="menu__link"><a href="#">CONTACTS</a></li>
+                    <li class="menu__link"><a href="#about">ABOUT ME</a></li>
+                    <li class="menu__link"><a href="#experience">MY EXPERIENCE</a></li>
+                    <li class="menu__link"><a href="#skills">MY SKILLS</a></li>
+                    <li class="menu__link"><a href="#projects">MY PROJECTS</a></li>
+                    <li class="menu__link"><a href="#pricelist">PRICE-LIST</a></li>
+                    <li class="menu__link"><a href="#contacts">CONTACTS</a></li>
                 </ul>
             </nav>
 
@@ -131,6 +131,26 @@
         </div>
     </div>
     <section class="promo">
+        <div class="dark-mode-btn">
+            <!-- From Uiverse.io by andrew-demchenk0 -->
+            <label class="switch">
+                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g fill="#ffd43b">
+                            <circle r="5" cy="12" cx="12"></circle>
+                            <path
+                                d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                            </path>
+                        </g>
+                    </svg></span>
+                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                            d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
+                        </path>
+                    </svg></span>
+                <input type="checkbox" class="input">
+                <span class="slider"></span>
+            </label>
+        </div>
         <div class="burger">
             <span></span>
             <span class="long"></span>
@@ -146,7 +166,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
@@ -214,7 +234,7 @@
             </div>
         </div>
     </section>
-    <section class="resume">
+    <section class="resume" id="experience">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Experience</h2>
             <div class="title title_fz36 title__section-subtitle">How can I be useful?</div>
@@ -296,7 +316,7 @@
             </div>
         </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Skills</h2>
             <div class="title title_fz36 title__section-subtitle">What I use in my work</div>
@@ -417,7 +437,7 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="projects">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Portfolio</h2>
             <div class="title title_fz36 title__section-subtitle">My works</div>
@@ -443,7 +463,7 @@
                     <img src="img/works/mac.jpg" alt="Mac">
                 </a>
             </div>
-            <div class="pricelist">
+            <div class="pricelist" id="pricelist">
                 <h2 class="title title_fz16 title__section-title">Price-list</h2>
                 <div class="divider"></div>
                 <div class="pricelist__wrapper">
@@ -509,7 +529,7 @@
             </div>
         </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
