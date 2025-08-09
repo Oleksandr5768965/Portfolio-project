@@ -16,7 +16,7 @@
         }
     }
     &__descr {
-        padding-top: 6px;
+        padding: 6px 2px 2px 2px;
         .divider {
             margin: 0;
         }
@@ -38,7 +38,7 @@
         }
     }
     &__form {
-        margin-top: 30px;
+        padding-top: 30px;
         display: grid;
         grid-template:45px 190px 45px / repeat(2, 280px);
         justify-content: space-between;
@@ -60,6 +60,9 @@
         display: grid;
         grid-template-columns: repeat(2, auto);
         column-gap: 35px;
+        button {
+            border-radius: 22px;
+        }
     }
     &__policy {
         font-size: 12px;
@@ -76,7 +79,8 @@
             width: 100%;
             height: 100%;
             padding: 0 20px;
-            font-size: 12px;
+            font-size: 17px;
+            border: solid 2px black;
         }
     }
     &__textarea {
@@ -87,7 +91,8 @@
             height:100%;
             resize:none;
             padding: 20px;
-            font-size: 12px;
+            font-size: 17px;
+            border: solid 2px black;
         }
     }
     &__btn {
@@ -97,4 +102,46 @@
          line-height: 21px; 
     }
 
+}
+.dark-mode {
+    .contacts {
+        &__form {
+            label {
+                background-color: transparent;
+                top: -20px;
+            }
+        }
+        &__input {
+            input {
+                background-color: transparent;
+                border: solid 2px white;
+                border-radius: 8px;
+                color:white;
+            }
+        }
+        &__textarea {
+            textarea {
+                background-color: transparent;
+                border: solid 2px white;
+                border-radius: 8px;
+                color:white;
+            }
+        }
+        &__link {
+            svg {
+                path {
+                    fill:white;
+                }
+            }
+        }
+        &__triggers {
+            button {
+                transition: transform 0.4s ease-in-out;
+                &:hover {
+                    color: #fff5f5;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
 }

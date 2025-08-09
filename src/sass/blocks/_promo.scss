@@ -4,7 +4,7 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background: url("../img/main_bg.jpg") no-repeat 50%/cover ;
+    background: url("../img/main-bg4.jpg") no-repeat 50%/cover ;
     padding-top: 205px;
     &__title {
         width: 535px;
@@ -19,19 +19,20 @@
     &__btns {
         display: flex;
         margin-top: 25px;
-        width:250px;
+        width:320px;
         align-items: center;
         justify-content: space-between;
     }
     &__link {
         color:#000;
         font-weight: bold;
+        border-radius: 22px;
+        transition: color , transform 0.4s ease-in-out;
         &:hover {
             color:#000;
             text-decoration: none;
-            background-color: transparent;
             box-shadow: none;
+            transform: scale(1.1);
         }
     }
 }
-

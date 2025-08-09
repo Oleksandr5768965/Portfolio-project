@@ -85,3 +85,21 @@
         }
     }
 }
+.dark-mode {
+    .resume {
+        &__item {
+            &::before {
+                background-color: white;
+            }
+        }
+        &__column {
+            ul {
+                li {
+                    &::after {
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
+}
